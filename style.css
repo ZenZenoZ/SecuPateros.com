@@ -34,10 +34,12 @@ footer {
     right: 0;
     height: 28px;
     z-index: 1000;
+    text-shadow: none;
 }
 
 footer p {
 	margin: 0;
+    text-shadow: none;
 }
 @media (max-width: 700px){
     footer {
@@ -1077,7 +1079,7 @@ header {
     max-width: 100%;
     margin: 20px auto;
     padding: 20px;
-    background-image: radial-gradient(rgba(255, 255, 0, 0.5),rgba(0, 128, 0, 0.5)), url(./img/bg3.jpg);
+    background-image: radial-gradient(rgba(255, 255, 0, 0.5),rgba(0, 128, 0, 0.5)), url(./img/bg4.jpg);
     border-radius: 20px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.849);
     background-repeat: no-repeat;
@@ -1108,6 +1110,23 @@ header {
     text-align: justify;
     text-shadow: 2px 2px 5px #fff;
 }
+.lesson-1-row{
+    display: flex;
+}
+.lesimg-col{
+    flex: 30%;
+    padding: 5px;
+}
+.lesson-img1{
+    width: 250px;
+    height: auto;
+    padding: .3em;
+    margin-right: 1.5em;
+}
+#lesson-img2{
+    padding: 0;
+    margin-top: 1em;
+}
 @media (max-width: 400px){
     .lesson-1 h1 {
         font-size: 25px;
@@ -1123,4 +1142,21 @@ header {
         text-align: center;
         font-size: 15px;
     }
+    .lesson-img1{
+        display: none;
+    }
+    
+}
+@media (max-width: 700px){
+    .lesson-img1{
+        display: none;
+    }
+    .lesimg-col{
+    flex: 0;
+    padding: 0;
+    }
+}
+/*-----------LESSON 2------------*/
+.lesson-2{
+    background-image: radial-gradient(rgba(255, 255, 0, 0.5),rgba(0, 128, 0, 0.5)), url(./img/bg4.jpg);
 }
